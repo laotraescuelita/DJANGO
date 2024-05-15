@@ -1,0 +1,20 @@
+Voy a crear una página para la papeleria. 
+
+
+Ejemplo para subir los archivos como json:
+import json 
+from blogs.models import Post
+with open ('post.json') as f:
+    posts_json = json.load(f)
+
+for post in posts_json:
+    post = Post(title=post['title'], content=post['content'], author_id=post['user_id'])
+    post.save
+
+pagina 14  lugar 5 cantor georg capturrar
+
+ruta = 'C:\Users\erick\OneDrive\Escritorio\Erick\Proyectos_Papeleria\pape_crm_3\productos.json'
+
+
+
+
